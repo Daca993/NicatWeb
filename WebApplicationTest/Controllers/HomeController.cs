@@ -19,6 +19,14 @@ namespace WebApplicationTest.Controllers
 
             return View();
         }
+        public ActionResult TestAction()
+        {
+            ViewBag.Message = "Your application description page.";
+
+            return View();
+            //return Content("Nesto");
+            //return Json(new { Pera = 10, Djoka = "aaaaa" });
+        }
 
         public ActionResult Contact()
         {
